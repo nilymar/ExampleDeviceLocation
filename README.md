@@ -16,8 +16,8 @@ The main points in creating an app that fetches location data from the device ar
 1. add implementation for google play location services to your build.grade (app), the current version is:
    'com.google.android.gms:play-services-location:17.0.0'
 2. add location permissions to the manifest, I added both:
-   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+   uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+   uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
 3. check for permissions when you try to fetch the location data - I used the ready made library EasyPermissions to simplify the come,
    so, I added this implementation to build.gradle: 'pub.devrel:easypermissions:3.0.0'
 4. the GPS must be enabled for the location data fetching to work, I used the GpsUtils created by "Droid By Me" to do so
